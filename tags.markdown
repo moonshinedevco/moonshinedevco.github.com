@@ -1,6 +1,6 @@
 ---
 layout: base
-title: categories of found science
+title: categories
 ---
 # Posts by Tag
 {% for cat in site.categories | sort %}
