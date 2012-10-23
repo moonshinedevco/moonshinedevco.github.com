@@ -4,17 +4,17 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Moonshine Dev. Co. Web Log</title>
-  <link rel="alternate" type="text/html" href="http://blog.moonshinedev.co/" />
-  <link rel="self" type="application/atom+xml" href="http://blog.moonshinedev.co/atom.xml" />
-  <id>http://blog.moonshinedev.co/atom.xml</id>
+  <link rel="alternate" type="text/html" href="http://moonshinedev.co/blog/" />
+  <link rel="self" type="application/atom+xml" href="http://moonshinedev.co/blog/atom.xml" />
+  <id>http://moonshinedev.co/blog/atom.xml</id>
   <updated>{{ site.time | date_to_utc | date:"%Y-%m-%dT%H:%M:%SZ" }}</updated>
   <subtitle>Serving up masterfully crafted web libations</subtitle>
 
   {% for post in site.posts limit:15 %}
   <entry>
     <title>{{ post.title }}</title>
-    <link rel='alternate' type='text/html' href='http://blog.moonshinedev.co{{ post.url }}' />
-    <id>tag:blog.moonshinedev.co:{% if forloop.index0 > last_dash_index %}{{ post.id | replace:"-","_" }}{% else %}{{ post.id }}{% endif %}</id>
+    <link rel='alternate' type='text/html' href='http://moonshinedev.co{{ post.url }}' />
+    <id>tag:moonshinedev.co:{% if forloop.index0 > last_dash_index %}{{ post.id | replace:"-","_" }}{% else %}{{ post.id }}{% endif %}</id>
     <updated>{{ post.date | date.getutc:"%Y-%m-%dT%H:%M:00Z" }}</updated>
 
     <author>
@@ -24,7 +24,7 @@ layout: nil
     </author>
 
     <summary>{{ post.content | html_truncatewords:50 }}</summary>
-    <content type='html' xml:lang='en' xml:base='http://blog.moonshinedev.co/'>
+    <content type='html' xml:lang='en' xml:base='http://moonshinedev.co/blog/'>
       <![CDATA[{{ post.content }}{{ post.extended }}]]>
     </content>
   </entry>

@@ -1,1 +1,1 @@
-Website for [blog.moonshinedev.co](http://blog.moonshinedev.co).
+Website for [moonshinedev.co](http://moonshinedev.co).
