@@ -1,0 +1,424 @@
+@import url(http://fonts.googleapis.com/css?family=Arbutus+Slab);
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+  Mixins available:
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Left: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   transform               - arguments: Parameters: null
+    -   transition              - arguments: What: all, Length: 1s, Easing: ease-in-out
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+
+------------------------------------------------------------- */
+/* BACKGROUND GRADIENT */
+/* BACKGROUND SIZE */
+/* BORDER RADIUS */
+/* BOX */
+/* BOX RGBA */
+/* BOX SHADOW */
+/* BOX SIZING */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TRANSFORM  */
+/* TRANSITION */
+/* TRIPLE BORDERS */
+@font-face {
+  font-family: 'geared_slabregular';
+  src: url("/fonts/gearedslab-bold-webfont.eot");
+  src: url("/fonts/gearedslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/gearedslab-bold-webfont.woff") format("woff"), url("/fonts/gearedslab-bold-webfont.ttf") format("truetype"), url("/fonts/gearedslab-bold-webfont.svg#geared_slabregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'geared_slabthin';
+  src: url("/fonts/gearedslab-light-webfont.eot");
+  src: url("/fonts/gearedslab-light-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/gearedslab-light-webfont.woff") format("woff"), url("/fonts/gearedslab-light-webfont.ttf") format("truetype"), url("/fonts/gearedslab-light-webfont.svg#geared_slabthin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'socialicoregular';
+  src: url("/fonts/socialico-webfont.eot");
+  src: url("/fonts/socialico-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/socialico-webfont.woff") format("woff"), url("/fonts/socialico-webfont.ttf") format("truetype"), url("/fonts/socialico-webfont.svg#socialicoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #201e23;
+  background-image: url("/images/wallpaper.png"); }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+#shell {
+  width: 1200px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+  margin: 0 auto; }
+
+#showcase {
+  height: 600px;
+  width: 1200px;
+  margin: 0 auto;
+  background-image: url("/images/moonshine_moonlight_back_b.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: center 36%;
+  box-shadow: inset 0 0 200px black; }
+
+#flagship-banner {
+  height: 111px;
+  width: 1200px;
+  margin: 0 auto;
+  background-image: url("/images/moon_strip_back.png");
+  background-repeat: repeat;
+  position: relative; }
+  #flagship-banner #bound-box {
+    width: 1200px;
+    height: 10px; }
+    #flagship-banner #bound-box i {
+      width: 60px;
+      height: 90px;
+      background-position: center 17px;
+      margin-left: 20px;
+      background-image: url("/images/divider.png");
+      display: inline-block;
+      background-repeat: no-repeat;
+      float: left; }
+    #flagship-banner #bound-box #moon-dev-icon {
+      float: left;
+      height: 72px;
+      width: 72px;
+      background-image: url("/images/m_icon.png");
+      background-repeat: no-repeat;
+      position: relative;
+      top: 24px;
+      left: 45px; }
+    #flagship-banner #bound-box #tagline {
+      float: left;
+      font-family: 'geared_slabregular';
+      font-size: 34px;
+      text-transform: uppercase;
+      position: relative;
+      top: 26px;
+      left: 19px;
+      color: rgba(0, 0, 0, 0.7); }
+    #flagship-banner #bound-box b {
+      padding: 18px;
+      padding-left: 22px;
+      font-size: 40px;
+      position: relative;
+      top: 2px; }
+
+#specialties {
+  height: 740px;
+  width: 1200px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.4); }
+  #specialties #services {
+    margin-top: 80px;
+    width: 100%;
+    height: 340px;
+    text-align: center;
+    margin-left: 100px; }
+    #specialties #services #design, #specialties #services #dev, #specialties #services #ship {
+      width: 308px;
+      display: inline-block;
+      height: 340px;
+      margin: 0 10px;
+      float: left; }
+    #specialties #services .hed {
+      font-family: 'Arbutus Slab', sans-serif;
+      font-size: 20px;
+      color: #a4add1;
+      margin-left: -10px; }
+    #specialties #services ul.tags {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px 0;
+      margin-left: -10px; }
+      #specialties #services ul.tags li {
+        font-family: 'Arbutus Slab';
+        font-size: 12px;
+        color: #CCC;
+        padding: 14px 20px;
+        text-transform: uppercase;
+        border-top: 1px dotted #333; }
+        #specialties #services ul.tags li:nth-child(odd) {
+          background-color: rgba(255, 255, 255, 0.025); }
+    #specialties #services #design {
+      border-right: 1px dotted #333; }
+    #specialties #services #dev {
+      border-right: 1px dotted #333; }
+
+#portfolio {
+  height: 570px;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #777e9b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#777e9b), to(#373a49));
+  background-image: -webkit-linear-gradient(top, #777e9b, #373a49);
+  background-image: -moz-linear-gradient(top, #777e9b, #373a49);
+  background-image: -ms-linear-gradient(top, #777e9b, #373a49);
+  background-image: -o-linear-gradient(top, #777e9b, #373a49);
+  background-image: linear-gradient(top, #777e9b, #373a49);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
+  background-image: url("/images/port_back.png");
+  opacity: .88;
+  text-align: center;
+  border-top: 4px double rgba(0, 0, 0, 0.18);
+  border-bottom: 4px double rgba(0, 0, 0, 0.18); }
+  #portfolio h2 {
+    color: white; }
+  #portfolio h2 span {
+    border-bottom: 4px double #ccc;
+    border-top: 4px double #ccc;
+    font-weight: 200; }
+  #portfolio #collection {
+    width: 1150px;
+    height: 300px;
+    vertical-align: top;
+    margin: 30px auto; }
+    #portfolio #collection .feature {
+      height: 310px;
+      width: 340px;
+      display: inline-block;
+      margin-top: 0;
+      float: left;
+      margin: 10px 20px 0 20px;
+      position: relative; }
+      #portfolio #collection .feature .screen {
+        box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+        display: inline-block;
+        height: 200px;
+        width: 300px;
+        position: absolute;
+        z-index: 5;
+        top: 6px;
+        left: 20px; }
+      #portfolio #collection .feature img {
+        width: 300px;
+        height: 200px;
+        border: 6px double rgba(59, 61, 73, 0.2);
+        margin-bottom: 6px;
+        position: relative;
+        z-index: 1; }
+      #portfolio #collection .feature span {
+        display: block;
+        width: 290px;
+        text-align: left;
+        margin-left: 20px; }
+      #portfolio #collection .feature .project {
+        font-family: 'Arbutus Slab', sans-serif;
+        font-size: 20px;
+        color: #3b3d49;
+        margin-bottom: 7px; }
+      #portfolio #collection .feature .contribution {
+        font-family: 'Arbutus Slab', serif;
+        font-size: 15px;
+        color: #ddd; }
+
+#about {
+  height: 660px;
+  width: 1200px;
+  background-color: rgba(0, 0, 0, 0.4); }
+  #about .split {
+    width: 1200px;
+    margin: 80px auto 0 auto; }
+  #about .bio {
+    height: 400px;
+    width: 462px;
+    padding: 32px 55px 0 80px;
+    display: inline-block;
+    float: left;
+    text-align: left;
+    position: relative;
+    top: -40px; }
+    #about .bio img {
+      width: 120px;
+      border: 6px double rgba(59, 61, 73, 0.2);
+      float: left;
+      margin-right: 20px;
+      display: block;
+      margin-bottom: 10px;
+      margin-left: 0; }
+    #about .bio .name, #about .bio .role {
+      font-family: 'Arbutus Slab', sans-serif;
+      font-size: 20px;
+      color: #a4add1;
+      display: block;
+      margin-top: 20px; }
+    #about .bio .role {
+      font-size: 14px;
+      color: #ccc;
+      padding-top: 0;
+      margin-top: 3px;
+      text-transform: uppercase; }
+    #about .bio .social {
+      margin-top: 15px; }
+      #about .bio .social span {
+        font-family: 'socialicoregular';
+        font-size: 50px;
+        color: #333;
+        text-shadow: 0 0 1px #000;
+        position: relative;
+        cursor: pointer;
+        margin-right: 5px; }
+        #about .bio .social span:hover {
+          color: #ddd;
+          opacity: .7; }
+    #about .bio .column {
+      display: inline-block;
+      float: left;
+      width: 435px;
+      padding-left: 4px;
+      clear: both;
+      margin-top: 7px;
+      list-style-type: square; }
+      #about .bio .column li {
+        font-family: 'Arbutus Slab', serif;
+        color: #939393;
+        font-size: 15px;
+        padding: 0px;
+        line-height: 140%;
+        color: white;
+        opacity: .8;
+        margin: 11px 0 14px 14px;
+        padding-left: 5px; }
+  #about #sheldon {
+    border-right: 1px dotted #333;
+    width: 465px; }
+
+footer {
+  height: 280px;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 50px; }
+  footer #moonshine-mark {
+    background-image: url("/images/moonshine_classic.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 125px;
+    background-size: contain;
+    opacity: .15; }
+
+.district {
+  height: 45px;
+  width: 50px;
+  background-image: url("/images/district_distilled.png");
+  background-size: contain;
+  display: inline-block;
+  opacity: .84;
+  margin-bottom: -20px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -12px;
+  left: 5px;
+  margin-right: 8px;
+  margin-left: 0; }
+
+h2 {
+  position: relative;
+  margin-top: 0;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: auto;
+  font-family: 'geared_slabthin';
+  font-size: 28px;
+  color: #AAA;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: .08em; }
+  h2 span {
+    padding: 9px 4px 3px 4px;
+    display: inline-block;
+    border-bottom: 4px double #666;
+    border-top: 4px double #666; }
+  h2 i {
+    display: inline-block;
+    position: absolute;
+    bottom: 2px;
+    background-image: url("/images/star_bullet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -8px; }
+
+p {
+  font-family: 'Arbutus Slab', serif;
+  font-size: 18px;
+  color: #939393;
+  line-height: 170%;
+  padding: 14px 140px;
+  opacity: 1;
+  position: relative; }
+
+.knot {
+  display: inline-block;
+  background-image: url("/images/knot.png");
+  background-repeat: no-repeat;
+  opacity: .9;
+  position: absolute;
+  left: 49%;
+  width: 45px;
+  height: 45px;
+  margin: 30px 0 0 0;
+  margin-left: -14px; }
+
+#contact-us {
+  text-align: center;
+  font-family: 'Arbutus Slab', sans-serif;
+  font-size: 17px;
+  color: #a4add1;
+  opacity: .75;
+  display: block;
+  margin: 40px 0 40px; }
+  #contact-us span {
+    border-top: 4px double #333;
+    border-bottom: 4px double #333;
+    padding: 10px;
+    display: inline-block; }
+  #contact-us a:hover {
+    color: white; }
