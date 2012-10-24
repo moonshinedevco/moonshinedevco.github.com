@@ -327,7 +327,7 @@ a {
     width: 465px; }
 
 footer {
-  height: 280px;
+  height: 310px;
   width: 1200px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.6);
@@ -339,6 +339,17 @@ footer {
     height: 125px;
     background-size: contain;
     opacity: .15; }
+  footer #fan-us {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: -10px; }
+    footer #fan-us div {
+      width: 95px;
+      display: inline-block;
+      position: relative;
+      top: 20px;
+      left: -25px; }
 
 .district {
   height: 45px;
@@ -414,7 +425,7 @@ p {
   color: #a4add1;
   opacity: .75;
   display: block;
-  margin: 40px 0 40px; }
+  margin: 40px 0 10px; }
   #contact-us span {
     border-top: 4px double #333;
     border-bottom: 4px double #333;

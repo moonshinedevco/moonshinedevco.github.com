@@ -60,8 +60,11 @@ a { text-decoration: none; color: inherit; }
   }
   #sheldon { border-right: 1px dotted #333; width: 465px; }
 }
-footer { height: 280px; width: 1200px; margin: 0 auto; background-color: rgba(0,0,0,0.6); padding-top: 50px;
+footer { height: 310px; width: 1200px; margin: 0 auto; background-color: rgba(0,0,0,0.6); padding-top: 50px;
   #moonshine-mark { background-image: url('/images/moonshine_classic.png'); background-repeat: no-repeat; background-position: center center; height: 125px; background-size: contain; opacity: .15;  }
+  #fan-us { text-align: center; margin-top: 5px; margin-bottom: 0; margin-left: -10px;
+    div { width: 95px; display: inline-block; position: relative; top: 20px;left: -25px; }
+  }
 }
 .district { height: 45px; width: 50px; background-image: url('/images/district_distilled.png'); background-size: contain; display: inline-block; opacity: .84; margin-bottom: -20px; background-repeat: no-repeat; position: relative;
   top: -12px; left: 5px; margin-right: 8px; margin-left: 0;
@@ -74,7 +77,7 @@ h2 { position: relative; margin-top: 0; padding-top: 60px; padding-bottom: 10px;
 }
 p { font-family: 'Arbutus Slab', serif; font-size: 18px; color: #939393; line-height: 170%; padding: 14px 140px; opacity: 1; position: relative; }
 .knot { display: inline-block; background-image: url('/images/knot.png'); background-repeat: no-repeat; opacity: .9; position: absolute; left: 49%; width: 45px; height: 45px; margin: 30px 0 0 0; margin-left: -14px; }
-#contact-us {  text-align: center;  font-family: 'Arbutus Slab', sans-serif; font-size: 17px; color: #a4add1; opacity: .75; display: block; margin: 40px 0 40px;
+#contact-us {  text-align: center;  font-family: 'Arbutus Slab', sans-serif; font-size: 17px; color: #a4add1; opacity: .75; display: block; margin: 40px 0 10px;
   span { border-top: 4px double #333; border-bottom: 4px double #333; padding:10px; display: inline-block; }
   a:hover { color: white; }
  }
