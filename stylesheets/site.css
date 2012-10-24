@@ -461,3 +461,44 @@ p {
     display: inline-block; }
   #contact-us a:hover {
     color: white; }
+
+div#menu {
+  height: 40px;
+  background-color: #333;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 10000;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  border-bottom: 1px solid #666;
+}
+
+div#menu {
+    color: #AAAAAA;
+    font-family: 'geared_slabthin';
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 0.08em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+div#menu ul {
+    margin-top: 8px;
+}
+
+div#menu ul li a {
+   color: #A4ADD1;
+   text-decoration: none; 
+}
+
+div#menu ul li a:hover {
+   text-decoration: underline; 
+}
+
+div#menu ul li {
+ list-style-type: none; 
+ display: inline;
+  margin-right: 20px;
+}
