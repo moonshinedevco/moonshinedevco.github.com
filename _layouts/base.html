@@ -1,77 +1,101 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
-    <title>{{ page.title }}</title>
-    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://feeds.feedburner.com/MoonshineDevCoWebLog" />
-    <link href="/css/stylesheet.css" type="text/css" rel="stylesheet" />
-    <link href="/css/syntax.css" type="text/css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Muli|Caudex&subset=latin&v2' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.timeago.js"></script>
-    <script type="text/javascript" src="/js/showoff.min.js"></script>
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-35450393-1']);
-      _gaq.push(['_setDomainName', 'moonshinedev.co']);
-      _gaq.push(['_trackPageview']);
-      
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-    <meta property="ob:experiment-group" content="Front Page" />
-  </head>
-  <body>
-    <a href="http://github.com/moonshinedevco"><img style="margin: 0px; position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-    <div id="header">
-      <div id="search">
-	<form>
-	  <input type="text" id="st-search-input" class="st-search-input" />
-	</form>
-	<div id="st-results-container"></div>
-	<script type="text/javascript">
-	  var Swiftype = window.Swiftype || {};
-	  (function() {
-	  Swiftype.key = 'MZAYUaKHRRHEAQ51TbpB';
-	  Swiftype.inputElement = '#st-search-input';
-	  Swiftype.resultContainingElement = '#st-results-container';
-	  Swiftype.attachElement = '#st-search-input';
-	  Swiftype.renderStyle = "overlay";
-	  
-	  var script = document.createElement('script');
-	  script.type = 'text/javascript';
-	  script.async = true;
-	  script.src = "//swiftype.com/embed.js";
-	  var entry = document.getElementsByTagName('script')[0];
-	  entry.parentNode.insertBefore(script, entry);
-	  }());
-	</script>
-      </div>
-      <div><a href="/">Moonshinedevco</a></div>
-      <div id="menu">
-	<ul>
-	  <li><a href="/">blog</a></li>
-	</ul>
-      </div>
-    </div>
-    <div id="content">
-      {{ content}}
-    </div>
-    <div id="footer">
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
-	<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" />
-      </a>
-    </div>
-    <script type="text/javascript">
-      var disqus_shortname = 'moonshinedevco';
-      (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.src = 'http://disqus.com/forums/moonshinedevco/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-      }());
-    </script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>{{ page.title }}</title>
+		<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://feeds.feedburner.com/MoonshineDevCoWebLog" />
+		<meta name="description" content="High-end, down-home product development services that satisfy the finest marks in quality. We work with you to deliver specially crafted digital experiences. Washington, D.C. Distilled" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link type="text/css" rel="stylesheet" media="all" href="/stylesheets/site.css" />
+		<link type="text/css" rel="stylesheet" media="all" href="/stylesheets/blog.css" />
+		<link type="text/css" rel="stylesheet" media="all" href="/stylesheets/syntax.css" />
+
+		<link href="/css/syntax.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.timeago.js"></script>
+		<script type="text/javascript" src="/js/showoff.min.js"></script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-35450393-1']);
+		  _gaq.push(['_setDomainName', 'moonshinedev.co']);
+		  _gaq.push(['_trackPageview']);
+		  
+		  (function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</head>
+
+	<body>
+		<div id="shell">
+			  <div id="search">
+			    <form>
+			      <input type="text" id="st-search-input" class="st-search-input" />
+			    </form>
+			    <div id="st-results-container"></div>
+			    <script type="text/javascript">
+			      var Swiftype = window.Swiftype || {};
+			      (function() {
+			      Swiftype.key = 'MZAYUaKHRRHEAQ51TbpB';
+			      Swiftype.inputElement = '#st-search-input';
+			      Swiftype.resultContainingElement = '#st-results-container';
+			      Swiftype.attachElement = '#st-search-input';
+			      Swiftype.renderStyle = "overlay";
+			      
+			      var script = document.createElement('script');
+			      script.type = 'text/javascript';
+			      script.async = true;
+			      script.src = "//swiftype.com/embed.js";
+			      var entry = document.getElementsByTagName('script')[0];
+			      entry.parentNode.insertBefore(script, entry);
+			      }());
+			    </script>
+			  </div>
+			<div id="showcase">
+			</div>
+			<div id="flagship-banner">
+				<div id="bound-box">
+					<div id="moon-dev-icon"></div>
+					<i></i>
+					<div id="tagline">
+						Moonshine Dev. Co. World Wide Web Log
+					</div>
+				</div>
+			</div>
+
+			<div id="postlist">
+			  {{ content}}
+			</div>
+			<footer>
+				<div id="moonshine-mark"></div>
+				<div id="contact-us">
+					<span>Reach out to us at <a href="mailto:info@moonshinedev.co?subject='Moonshine Dev Inquiry'">info@moonshinedev.co</a></span>
+				</div>
+			<div id="fan-us">
+				<div id="fb-fan">
+					<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FMoonshine-Dev-Co%2F453208374720454&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=dark&amp;font=arial&amp;height=21&amp;appId=196686617065940" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+				</div>
+  				<div id="tw-fan">
+  					<a href="https://twitter.com/moonshinedevco" class="twitter-follow-button" data-show-count="false">Follow @moonshinedevco</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+			</div>
+			</footer>
+		</div>		
+		<script type="text/javascript">
+		  var disqus_shortname = 'moonshinedevco';
+		  (function () {
+		  var s = document.createElement('script'); s.async = true;
+		  s.src = 'http://disqus.com/forums/moonshinedevco/count.js';
+		  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		  }());
+		</script>
+	</body>
 </html>

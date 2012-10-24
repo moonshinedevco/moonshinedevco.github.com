@@ -19,7 +19,7 @@ $(function() {
 
 This results in the following display:
 
-<div id="examplerepos">
+<div id="examplerepos" style="background-color: #fff; padding: 30px; width: auto;">
 </div>
 
 It's not as pretty as the one github shows, but they have their own [octicons](https://github.com/blog/1106-say-hello-to-octicons).  If you want to use it, check out the [showoff github repo](http://github.com/moonshinedevco/showoff) to play.
