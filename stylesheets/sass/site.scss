@@ -16,7 +16,7 @@ a { text-decoration: none; color: inherit; }
   }
 }
 #specialties { height: 740px; width: 1200px; margin: 0 auto; background: rgba(0,0,0,0.4); 
-  #services { margin-top: 80px; width: 100%; height: 340px; text-align: center; margin-left: 100px;
+  #services { margin-top: 80px; width: auto; height: 340px; text-align: center; margin-left: 100px;
     #design, #dev, #ship { width: 308px; display: inline-block; height: 340px; margin: 0 10px; float: left; }
     .hed { font-family: 'Arbutus Slab', sans-serif; font-size: 20px; color: #a4add1; margin-left: -10px; }
     ul.tags { list-style-type: none; display: inline-block; padding: 10px 0; margin-left: -10px;
@@ -29,7 +29,7 @@ a { text-decoration: none; color: inherit; }
     #ship { }  
   }
 }
-#portfolio { height: 570px; width: 1200px; margin: 0 auto; @include background-gradient(#777e9b, #373a49); background-image: url('/images/port_back.png'); opacity: .88; text-align: center;
+#portfolio { height: 570px; width: 1200px; margin: 0 auto; @include background-gradient(#777e9b, #373a49); background-image: url('/images/port_back.png'); @include opacity(.88); text-align: center;
   border-top: 4px double rgba(0,0,0,.18); border-bottom: 4px double rgba(0,0,0,.18);
   h2 { color: white; }
   h2 span { border-bottom: 4px double #ccc; border-top: 4px double #ccc; font-weight: 200; }
@@ -51,7 +51,7 @@ a { text-decoration: none; color: inherit; }
     .role {font-size: 14px; color: #ccc; padding-top: 0; margin-top: 3px; text-transform: uppercase; }
     .social { margin-top: 15px;
       span { font-family: 'socialicoregular'; font-size: 50px; color: #333; text-shadow: 0 0 1px #000; position: relative; cursor: pointer; margin-right: 5px;
-        &:hover { color: #ddd; opacity: .7 }
+        &:hover { color: #ddd; @include opacity(.7); }
      }
     }
     .column { display: inline-block; float: left; width: 435px; padding-left: 4px; clear: both; margin-top: 7px; list-style-type: square;
@@ -61,12 +61,12 @@ a { text-decoration: none; color: inherit; }
   #sheldon { border-right: 1px dotted #333; width: 465px; }
 }
 footer { height: 310px; width: 1200px; margin: 0 auto; background-color: rgba(0,0,0,0.6); padding-top: 50px;
-  #moonshine-mark { background-image: url('/images/moonshine_classic.png'); background-repeat: no-repeat; background-position: center center; height: 125px; background-size: contain; opacity: .15;  }
+  #moonshine-mark { background-image: url('/images/moonshine_classic.png'); background-repeat: no-repeat; background-position: center center; height: 125px; background-size: contain; @include opacity(.15);  }
   #fan-us { text-align: center; margin-top: 5px; margin-bottom: 0; margin-left: -10px;
     div { width: 95px; display: inline-block; position: relative; top: 20px;left: -25px; }
   }
 }
-.district { height: 45px; width: 50px; background-image: url('/images/district_distilled.png'); background-size: contain; display: inline-block; opacity: .84; margin-bottom: -20px; background-repeat: no-repeat; position: relative;
+.district { height: 45px; width: 50px; background-image: url('/images/district_distilled.png'); background-size: contain; display: inline-block; @include opacity(.84); margin-bottom: -20px; background-repeat: no-repeat; position: relative;
   top: -12px; left: 5px; margin-right: 8px; margin-left: 0;
  }
 h2 { position: relative; margin-top: 0; padding-top: 60px; padding-bottom: 10px; text-align: center; width: auto; font-family: 'geared_slabthin'; font-size: 28px; color: #AAA; text-transform: uppercase; font-weight: 100; letter-spacing: .08em;  
@@ -75,9 +75,9 @@ h2 { position: relative; margin-top: 0; padding-top: 60px; padding-bottom: 10px;
     left: 50%; margin-left: -8px; 
   }
 }
-p { font-family: 'Arbutus Slab', serif; font-size: 18px; color: #939393; line-height: 170%; padding: 14px 140px; opacity: 1; position: relative; }
-.knot { display: inline-block; background-image: url('/images/knot.png'); background-repeat: no-repeat; opacity: .9; position: absolute; left: 49%; width: 45px; height: 45px; margin: 30px 0 0 0; margin-left: -14px; }
-#contact-us {  text-align: center;  font-family: 'Arbutus Slab', sans-serif; font-size: 17px; color: #a4add1; opacity: .75; display: block; margin: 40px 0 10px;
+p { font-family: 'Arbutus Slab', serif; font-size: 18px; color: #939393; line-height: 170%; padding: 14px 140px; @include opacity(1); position: relative; }
+.knot { display: inline-block; background-image: url('/images/knot.png'); background-repeat: no-repeat; @include opacity(.9); position: absolute; left: 49%; width: 45px; height: 45px; margin: 30px 0 0 0; margin-left: -14px; }
+#contact-us {  text-align: center;  font-family: 'Arbutus Slab', sans-serif; font-size: 17px; color: #a4add1; @include opacity(.75); display: block; margin: 40px 0 10px;
   span { border-top: 4px double #333; border-bottom: 4px double #333; padding:10px; display: inline-block; }
   a:hover { color: white; }
  }

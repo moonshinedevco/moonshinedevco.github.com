@@ -154,7 +154,7 @@ a {
   background: rgba(0, 0, 0, 0.4); }
   #specialties #services {
     margin-top: 80px;
-    width: 100%;
+    width: auto;
     height: 340px;
     text-align: center;
     margin-left: 100px; }
@@ -201,7 +201,11 @@ a {
   background-image: linear-gradient(top, #777e9b, #373a49);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor);
   background-image: url("/images/port_back.png");
-  opacity: .88;
+  filter: alpha(opacity=88);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=88)";
+  -moz-opacity: 0.88;
+  -khtml-opacity: 0.88;
+  opacity: 0.88;
   text-align: center;
   border-top: 4px double rgba(0, 0, 0, 0.18);
   border-bottom: 4px double rgba(0, 0, 0, 0.18); }
@@ -303,7 +307,11 @@ a {
         margin-right: 5px; }
         #about .bio .social span:hover {
           color: #ddd;
-          opacity: .7; }
+          filter: alpha(opacity=70);
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+          -moz-opacity: 0.7;
+          -khtml-opacity: 0.7;
+          opacity: 0.7; }
     #about .bio .column {
       display: inline-block;
       float: left;
@@ -338,7 +346,11 @@ footer {
     background-position: center center;
     height: 125px;
     background-size: contain;
-    opacity: .15; }
+    filter: alpha(opacity=15);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+    -moz-opacity: 0.15;
+    -khtml-opacity: 0.15;
+    opacity: 0.15; }
   footer #fan-us {
     text-align: center;
     margin-top: 5px;
@@ -357,7 +369,11 @@ footer {
   background-image: url("/images/district_distilled.png");
   background-size: contain;
   display: inline-block;
-  opacity: .84;
+  filter: alpha(opacity=84);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=84)";
+  -moz-opacity: 0.84;
+  -khtml-opacity: 0.84;
+  opacity: 0.84;
   margin-bottom: -20px;
   background-repeat: no-repeat;
   position: relative;
@@ -403,6 +419,10 @@ p {
   color: #939393;
   line-height: 170%;
   padding: 14px 140px;
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
   opacity: 1;
   position: relative; }
 
@@ -410,7 +430,11 @@ p {
   display: inline-block;
   background-image: url("/images/knot.png");
   background-repeat: no-repeat;
-  opacity: .9;
+  filter: alpha(opacity=90);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  opacity: 0.9;
   position: absolute;
   left: 49%;
   width: 45px;
@@ -423,7 +447,11 @@ p {
   font-family: 'Arbutus Slab', sans-serif;
   font-size: 17px;
   color: #a4add1;
-  opacity: .75;
+  filter: alpha(opacity=75);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  -moz-opacity: 0.75;
+  -khtml-opacity: 0.75;
+  opacity: 0.75;
   display: block;
   margin: 40px 0 10px; }
   #contact-us span {
