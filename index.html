@@ -19,7 +19,6 @@
 		<script type="text/javascript">
 			$(document).on('ready', function(){
 				$('#lineup span').on('click', function(e){
-					e.preventDefault(); 
 					el = $(this).attr('data-jump')
 					$.scrollTo($("[rel='" + el + "']"), 1200);
 				});		

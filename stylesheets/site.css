@@ -530,6 +530,8 @@ body[data-template="moon-blog"] #tagline {
 body[data-template="moon-blog"] h2 a, body[data-template="moon-blog"] a {
   text-decoration: none !important;
   color: white !important; }
+body[data-template="moon-blog"] h2 a {
+  color: #A4ADD1 !important; }
 body[data-template="moon-blog"] .date {
   font-family: Arial, verdana, sans-serif !important;
   padding-top: 10px;
@@ -539,7 +541,8 @@ body[data-template="moon-blog"] .post {
 body[data-template="moon-blog"] .post > p {
   font-size: 16px; }
 body[data-template="moon-blog"] blockquote {
-  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.03) !important;
   border: 1px solid #ccc;
   font-family: 'Arbutus Slab', serif !important; }
 body[data-template="moon-blog"] footer {

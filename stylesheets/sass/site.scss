@@ -103,9 +103,10 @@ p { font-family: 'Arbutus Slab', serif; font-size: 18px; color: #939393; line-he
 body[data-template="moon-blog"] { 
   #tagline { top: 32px !important; }
   h2 a, a { text-decoration: none !important; color: white !important; }
+  h2 a { color: #A4ADD1 !important; }
   .date { font-family: Arial, verdana, sans-serif !important; padding-top: 10px; padding-bottom: 10px;}
   .post { padding: 0px 150px 70px 150px !important; }
   .post > p { font-size: 16px; }
-  blockquote { background-color: rgba(255,255,255, .15) !important; border: 1px solid #ccc; font-family: 'Arbutus Slab', serif !important; }
+  blockquote { color: white !important; background-color: rgba(255,255,255, .03) !important; border: 1px solid #ccc; font-family: 'Arbutus Slab', serif !important; }
   footer { margin-top: 0 !important; }
 }
