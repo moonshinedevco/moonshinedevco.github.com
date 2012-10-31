@@ -541,9 +541,9 @@ body[data-template="moon-blog"] .post {
 body[data-template="moon-blog"] .post > p {
   font-size: 16px; }
 body[data-template="moon-blog"] blockquote {
-  color: white !important;
+  color: #A4ADD1 !important;
   background-color: rgba(255, 255, 255, 0.03) !important;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   font-family: 'Arbutus Slab', serif !important; }
 body[data-template="moon-blog"] footer {
   margin-top: 0 !important; }
