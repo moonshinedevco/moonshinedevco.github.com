@@ -6,3 +6,15 @@ You mention end to end product dev at the top with the nice list of items.  You 
  * add email addy to top of page
  * change ON-SITE TRAINING to ON-SITE TRAINING: Github/Ruby/Rails
  * figure out how to put github repos on page (or on a different page?) so people can see our code
+
+===================
+I've set up a branch called stationarynav to give you an idea of what I'm thinking for the stationary nav.
+
+BTW - it's only in FF that the top github logo for the reserves is off center vertically.
+
+I noticed you added some blog stuff to site.css - some of that overwrites what's in blog.css - we should probably combine or move blog.css.
+
+The issue w/ the current "say hi" is that once you click it you see this:
+http://cl.ly/image/211I1X2t2N3W
+
+So it's not clear what you're supposed to do next.  Maybe we should just have a "CONTACT" section at the bottom with a few options. 
