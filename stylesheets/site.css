@@ -530,6 +530,8 @@ body[data-template="moon-blog"] #tagline {
 body[data-template="moon-blog"] h2 a, body[data-template="moon-blog"] a {
   text-decoration: none !important;
   color: white !important; }
+body[data-template="moon-blog"] .post a:hover {
+  text-decoration: underline !important; }
 body[data-template="moon-blog"] h2 a {
   color: #A4ADD1 !important; }
 body[data-template="moon-blog"] .date {

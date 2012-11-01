@@ -35,59 +35,69 @@
 
 	<body data-template="moon-blog">
 		<div id="shell">
-			  <div id="search">
-			    <form>
-			      <input type="text" id="st-search-input" class="st-search-input" />
-			    </form>
-			    <div id="st-results-container"></div>
-			    <script type="text/javascript">
-			      var Swiftype = window.Swiftype || {};
-			      (function() {
-			      Swiftype.key = 'yzxAHjpx1qhMJyz62QsY';
-			      Swiftype.inputElement = '#st-search-input';
-			      Swiftype.resultContainingElement = '#st-results-container';
-			      Swiftype.attachElement = '#st-search-input';
-			      Swiftype.renderStyle = "overlay";
-			      
-			      var script = document.createElement('script');
-			      script.type = 'text/javascript';
-			      script.async = true;
-			      script.src = "//swiftype.com/embed.js";
-			      var entry = document.getElementsByTagName('script')[0];
-			      entry.parentNode.insertBefore(script, entry);
-			      }());
-			    </script>
-			  </div>
-			<div id="showcase">
-			</div>
-			<div id="flagship-banner">
-				<div id="bound-box">
-					<a href="/"><div id="moon-dev-icon"></div></a>
-					<i></i>
-					<div id="tagline">
-						Moonshine Dev. Co. World Wide Web Log
-					</div>
-				</div>
-			</div>
+                  <div id="top-nav">
+                    <div id="lineup">
+                      <div id="nav-ico"></div>
+                      <a href="/"><span>Our Trade</span></a>
+                      <span class="break">·</span>
+                      <a href="/blog"><span>Blog</span></a>
+		      <div id="search">
+			<form>
+			  <input type="text" id="st-search-input" class="st-search-input" />
+			</form>
+			<div id="st-results-container"></div>
+		      </div>
+                    </div>
+                  </div>
+		  
+		  <script type="text/javascript">
+		    var Swiftype = window.Swiftype || {};
+		    (function() {
+		    Swiftype.key = 'yzxAHjpx1qhMJyz62QsY';
+		    Swiftype.inputElement = '#st-search-input';
+		    Swiftype.resultContainingElement = '#st-results-container';
+		    Swiftype.attachElement = '#st-search-input';
+		    Swiftype.renderStyle = "overlay";
+		    
+		    var script = document.createElement('script');
+		    script.type = 'text/javascript';
+		    script.async = true;
+		    script.src = "//swiftype.com/embed.js";
+		    var entry = document.getElementsByTagName('script')[0];
+		    entry.parentNode.insertBefore(script, entry);
+		    }());
+		  </script>
 
-			<div id="postlist">
-			  {{ content}}
-			</div>
-			<footer>
-				<div id="moonshine-mark"></div>
-				<div id="contact-us">
-					<span>Reach out to us at <a href="mailto:info@moonshinedev.co?subject='Moonshine Dev Inquiry'">info@moonshinedev.co</a></span>
-				</div>
-			<div id="fan-us">
-				<div id="fb-fan">
-					<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FMoonshine-Dev-Co%2F453208374720454&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=dark&amp;font=arial&amp;height=21&amp;appId=196686617065940" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
-				</div>
-  				<div id="tw-fan">
-  					<a href="https://twitter.com/moonshinedevco" class="twitter-follow-button" data-show-count="false">Follow @moonshinedevco</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				</div>
-			</div>
-			</footer>
+		  <div id="showcase">
+		  </div>
+		  <div id="flagship-banner">
+		    <div id="bound-box">
+		      <a href="/"><div id="moon-dev-icon"></div></a>
+		      <i></i>
+		      <div id="tagline">
+			Moonshine Development Company World Wide Web Log
+		      </div>
+		    </div>
+		  </div>
+		  
+		  <div id="postlist">
+		    {{ content}}
+		  </div>
+		  <footer>
+		    <div id="moonshine-mark"></div>
+		    <div id="contact-us">
+		      <span>Reach out to us at <a href="mailto:info@moonshinedev.co?subject='Moonshine Dev Inquiry'">info@moonshinedev.co</a></span>
+		    </div>
+		    <div id="fan-us">
+		      <div id="fb-fan">
+			<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FMoonshine-Dev-Co%2F453208374720454&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=dark&amp;font=arial&amp;height=21&amp;appId=196686617065940" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+		      </div>
+  		      <div id="tw-fan">
+  			<a href="https://twitter.com/moonshinedevco" class="twitter-follow-button" data-show-count="false">Follow @moonshinedevco</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		      </div>
+		    </div>
+		  </footer>
 		</div>		
 		<script type="text/javascript">
 		  var disqus_shortname = 'moonshinedevco';
