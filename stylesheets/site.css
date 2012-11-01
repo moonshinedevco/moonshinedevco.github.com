@@ -105,10 +105,12 @@ a {
 
 #top-nav {
   height: 60px;
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 1200px;
   padding-top: 2px;
-  padding-bottom: 1px; }
+  padding-bottom: 1px; 
+  position: fixed;
+  top: 0px; }
   #top-nav #lineup {
     margin: 5px 0;
     border-top: 1px solid #333;
