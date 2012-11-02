@@ -534,7 +534,7 @@ p {
 
 body[data-template="moon-blog"] #tagline {
   top: 32px !important; }
-body[data-template="moon-blog"] h2 a, body[data-template="moon-blog"] a {
+body[data-template="moon-blog"] h2 a, body[data-template="moon-blog"] div.post a {
   text-decoration: none !important;
   color: white !important; }
 body[data-template="moon-blog"] h2 a {
@@ -554,3 +554,12 @@ body[data-template="moon-blog"] blockquote {
   font-family: 'Arbutus Slab', serif !important; }
 body[data-template="moon-blog"] footer {
   margin-top: 0 !important; }
+
+div#thewell {
+  margin: 15px;
+  padding: 10px;
+}
+
+div#thewell div.repo {
+ background-color: #eee; 
+}

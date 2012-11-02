@@ -1,6 +1,7 @@
 ---
 layout: base
 title: "Moonshine Dev. Co. Web Log"
+tagline: Moonshine Development Company World Wide Web Log
 ---
 {% for post in site.posts offset: 0 limit: 10 %}
 <div class="post">
