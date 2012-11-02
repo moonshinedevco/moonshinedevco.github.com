@@ -130,7 +130,10 @@ a {
       background-fill: contain;
       margin-right: 20px;
       border-top: 1px solid black;
-      border-bottom: 1px solid black; }
+      border-bottom: 1px solid black;
+      display: inline-block;
+      margin-top: 0;
+      margin-left: 0; }
     #top-nav #lineup span {
       cursor: pointer;
       color: #A4ADD1;
@@ -534,8 +537,6 @@ body[data-template="moon-blog"] #tagline {
 body[data-template="moon-blog"] h2 a, body[data-template="moon-blog"] a {
   text-decoration: none !important;
   color: white !important; }
-body[data-template="moon-blog"] .post a:hover {
-  text-decoration: underline !important; }
 body[data-template="moon-blog"] h2 a {
   color: #A4ADD1 !important; }
 body[data-template="moon-blog"] .date {

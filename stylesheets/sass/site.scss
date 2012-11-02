@@ -10,7 +10,7 @@ a { text-decoration: none; color: inherit; }
 #top-nav { height: 60px; background-color: rgba(0,0,0,0.9); width: 100%; padding-top: 2px; padding-bottom: 1px; width: 1200px; position: fixed; z-index: 1000;
   #lineup { margin: 5px 0; border-top: 1px solid #333; border-bottom: 1px solid #333; height: 50px; font-family: 'Arbutus Slab', sans-serif; font-size: 18px;
     #nav-ico { float: left; background-image: url('/images/m_nav_icon.png'); background-repeat: no-repeat; background-position: center; width: 60px; height: 48px; background-fill: contain; margin-right: 20px; 
-      border-top: 1px solid black; border-bottom: 1px solid black;    
+      border-top: 1px solid black; border-bottom: 1px solid black; display: inline-block; margin-top: 0; margin-left: 0;
     }
     span { cursor: pointer; color: #A4ADD1; text-transform: uppercase; float: left; display: inline-block; margin-left: 30px; margin-top: 14px;
       &:hover { color: white; }
