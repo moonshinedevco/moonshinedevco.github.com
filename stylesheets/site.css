@@ -96,6 +96,7 @@ a {
 #showcase {
   height: 550px;
   width: 1200px;
+  padding-top: 60px;
   margin: 0 auto;
   background-image: url("/images/moonshine_moonlight_back_b.jpg");
   background-repeat: no-repeat;
@@ -105,10 +106,13 @@ a {
 
 #top-nav {
   height: 60px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.9);
   width: 100%;
   padding-top: 2px;
-  padding-bottom: 1px; }
+  padding-bottom: 1px;
+  width: 1200px;
+  position: fixed;
+  z-index: 1000; }
   #top-nav #lineup {
     margin: 5px 0;
     border-top: 1px solid #333;
@@ -152,7 +156,6 @@ a {
       color: #333; }
       #top-nav #lineup #fork-us b {
         font-weight: normal;
-        margin-top: 2px;
         text-transform: none;
         font-family: 'socialicoregular';
         font-size: 42px;
@@ -162,7 +165,8 @@ a {
         cursor: pointer;
         margin-right: 10px;
         float: left;
-        top: -7px; }
+        top: -7px;
+        line-height: 90%; }
       #top-nav #lineup #fork-us:hover {
         color: #ddd; }
 

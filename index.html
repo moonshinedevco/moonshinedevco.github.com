@@ -20,7 +20,7 @@
 			$(document).on('ready', function(){
 				$('#lineup span').on('click', function(e){
 					el = $(this).attr('data-jump')
-					$.scrollTo($("[rel='" + el + "']"), 1200);
+					$.scrollTo($("[rel='" + el + "']"), 1200, {offset: -60});
 				});		
 			})
 		</script>
