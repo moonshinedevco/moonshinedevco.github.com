@@ -563,3 +563,6 @@ div#thewell {
 div#thewell div.repo {
  background-color: #eee; 
 }
+
+/* fix color issue in blog post */
+div#thewell div.repo div a { text-decoration: none; color: #4183C4 !important; }

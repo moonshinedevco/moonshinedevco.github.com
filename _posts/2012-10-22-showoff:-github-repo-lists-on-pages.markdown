@@ -10,7 +10,7 @@ It's pretty simple to showoff two repos, each under a different organization.  Y
 
 {% highlight javascript %}
 $(function() { 
-  SHOWOFF.load('examplerepos', { 
+  SHOWOFF.load('thewell', { 
       'bmuller': [ 'sexmachine' ], 
       'moonshinedevco': [ 'showoff' ] 
     }); 
@@ -19,10 +19,10 @@ $(function() {
 
 This results in the following display:
 
-<div id="examplerepos" style="background-color: #fff; padding: 30px; width: auto;">
+<div id="thewell" style="background-color: #fff; padding: 30px; width: auto;">
 </div>
 
 It's not as pretty as the one github shows, but they have their own [octicons](https://github.com/blog/1106-say-hello-to-octicons).  If you want to use it, check out the [showoff github repo](http://github.com/moonshinedevco/showoff) to play.
 
-<script type="text/javascript">$(function() { SHOWOFF.load('examplerepos', { 'bmuller': [ 'sexmachine' ], 'moonshinedevco': [ 'showoff' ] }); });</script>
+<script type="text/javascript">$(function() { SHOWOFF.load('thewell', { 'bmuller': [ 'sexmachine' ], 'moonshinedevco': [ 'showoff' ] }); });</script>
 
