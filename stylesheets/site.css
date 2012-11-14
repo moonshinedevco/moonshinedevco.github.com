@@ -484,7 +484,7 @@ h2 {
     left: 50%;
     margin-left: -8px; }
 
-p {
+p, ul {
   font-family: 'Arbutus Slab', serif;
   font-size: 18px;
   color: #939393;
@@ -546,7 +546,7 @@ body[data-template="moon-blog"] .date {
   padding-bottom: 10px; }
 body[data-template="moon-blog"] .post {
   padding: 0px 150px 70px 150px !important; }
-body[data-template="moon-blog"] .post > p {
+body[data-template="moon-blog"] .post > p, body[data-template="moon-blog"] .post > ul {
   font-size: 16px; }
 body[data-template="moon-blog"] blockquote {
   color: #A4ADD1 !important;

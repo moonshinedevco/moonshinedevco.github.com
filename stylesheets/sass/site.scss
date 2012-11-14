@@ -93,7 +93,7 @@ h2 { position: relative; margin-top: 0; padding-top: 60px; padding-bottom: 10px;
     left: 50%; margin-left: -8px; 
   }
 }
-p { font-family: 'Arbutus Slab', serif; font-size: 18px; color: #939393; line-height: 170%; padding: 14px 140px; @include opacity(1); position: relative; }
+p, ul { font-family: 'Arbutus Slab', serif; font-size: 18px; color: #939393; line-height: 170%; padding: 14px 140px; @include opacity(1); position: relative; }
 .knot { display: inline-block; background-image: url('/images/knot.png'); background-repeat: no-repeat; @include opacity(.9); position: absolute; left: 49%; width: 45px; height: 45px; margin: 30px 0 0 0; margin-left: -14px; }
 #contact-us {  text-align: center;  font-family: 'Arbutus Slab', sans-serif; font-size: 17px; color: #a4add1; @include opacity(.75); display: block; margin: 40px 0 10px;
   span { border-top: 4px double #333; border-bottom: 4px double #333; padding:10px; display: inline-block; }
@@ -101,12 +101,13 @@ p { font-family: 'Arbutus Slab', serif; font-size: 18px; color: #939393; line-he
  }
  
 body[data-template="moon-blog"] { 
+  ul {  }
   #tagline { top: 32px !important; }
   h2 a, a { text-decoration: none !important; color: white !important; }
   h2 a { color: #A4ADD1 !important; }
   .date { font-family: Arial, verdana, sans-serif !important; padding-top: 10px; padding-bottom: 10px;}
   .post { padding: 0px 150px 70px 150px !important; }
-  .post > p { font-size: 16px; }
+  .post > p, .post > ul { font-size: 16px; }
   blockquote { color: #A4ADD1 !important; background-color: rgba(255,255,255, .03) !important; border: 1px solid #333; font-family: 'Arbutus Slab', serif !important; }
   footer { margin-top: 0 !important; }
 }
