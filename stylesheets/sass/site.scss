@@ -38,7 +38,7 @@ a { text-decoration: none; color: inherit; }
     #design, #dev, #ship { width: 308px; display: inline-block; height: 340px; margin: 0 10px; float: left; }
     .hed { font-family: 'Arbutus Slab', sans-serif; font-size: 20px; color: #a4add1; margin-left: -10px; }
     ul.tags { list-style-type: none; display: inline-block; padding: 10px 0; margin-left: -10px;
-      li { font-family: 'Arbutus Slab'; font-size: 12px; color: #CCC; padding: 14px 20px; text-transform: uppercase; border-top: 1px dotted #333; 
+      li { font-family: 'Arbutus Slab'; font-size: 12px; color: #CCC; padding: 14px 20px; text-transform: uppercase; border-top: 1px dotted #333; line-height: 120%;
         &:nth-child(odd) { background-color: rgba(255,255,255,.025); }
       }
     }
