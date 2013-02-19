@@ -555,3 +555,7 @@ body[data-template="moon-blog"] blockquote {
   font-family: 'Arbutus Slab', serif !important; }
 body[data-template="moon-blog"] footer {
   margin-top: 0 !important; }
+
+#thewell { background-color: #fff; background-image: url('/images/gray_jean.png'); margin: 25px; margin-right: 25px; }
+body[data-template="moon-blog"] div#thewell a { color: #4183C4 !important; }
+div#thewell div { text-align: left; }

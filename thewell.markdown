@@ -9,8 +9,9 @@ As a result of our work over the years, we've produced a ton of open source code
 
 <script type="text/javascript">
 	$(function() { SHOWOFF.load('thewell', 
-	{ 'bmuller': [ 'sexmachine', 'mod_auth_openid', 'bandit', 'hbaserb', 'twistar' ], 
-	  'livingsocial': [ 'abanalyzer', 'ankusa', 'ganapati', 'HiveSwarm' ],
-	  'moonshinedevco': [ 'showoff' ] }); });
+	{ 'bmuller': [ 'ankusa', 'sexmachine', 'mod_auth_openid', 'bandit', 'hbaserb', 'twistar', 'robostripper' ],
+	  'livingsocial': [ 'abanalyzer', 'ganapati', 'HiveSwarm' ],
+	  'moonshinedevco': [ 'showoff' ],
+	  'opbandit': [ 'former' ] }); });
 </script>
 
