@@ -15,7 +15,7 @@ layout: nil
     <title>{{ post.title }}</title>
     <link rel='alternate' type='text/html' href='http://moonshinedev.co{{ post.url }}' />
     <id>tag:moonshinedev.co:{% if forloop.index0 > last_dash_index %}{{ post.id | replace:"-","_" }}{% else %}{{ post.id }}{% endif %}</id>
-    <updated>{{ post.date | date.getutc:"%Y-%m-%dT%H:%M:00Z" }}</updated>
+    <updated>{{ post.date | date_to_utc | date:"%Y-%m-%dT%H:%M:00Z" }}</updated>
 
     <author>
       <name>Moonshine Dev. Co.</name>
@@ -23,7 +23,7 @@ layout: nil
       <email>info@moonshinedev.co</email>
     </author>
 
-    <summary>{{ post.content | html_truncatewords:50 }}</summary>
+    <summary type='html' xml:lang='en' xml:base='http://moonshinedev.co/blog/'><![CDATA[{{ post.content | html_truncatewords:50 }}]]></summary>
     <content type='html' xml:lang='en' xml:base='http://moonshinedev.co/blog/'>
       <![CDATA[{{ post.content }}{{ post.extended }}]]>
     </content>
